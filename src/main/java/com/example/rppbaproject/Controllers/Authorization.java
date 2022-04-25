@@ -26,6 +26,9 @@ public class Authorization {
     @Value("classpath:/xml/Registration.fxml")
     private Resource registrationResource;
 
+    @Value("classpath:/xml/Admin.fxml")
+    private Resource adminResource;
+
 
     @Autowired
     SupportController supportController;
@@ -52,10 +55,8 @@ public class Authorization {
 
     @FXML
     private void handleLoginButton() {
-        if (userRepo.existsByLoginAndPassword((loginAuthorizationField.getText()),
-                passwordAuthorizationField.getText())) {
-
-            System.out.println("USER EXISTS");
+      if(userRepo.findByLogin(loginAuthorizationField.getText()).getRole().getName().equals("Admin")){
+            supportController.generateFXML(adminResource);
         }
         else{
             System.out.println("ERROR");
