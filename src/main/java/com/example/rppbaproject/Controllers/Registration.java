@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Registration {
 
-
+    @Autowired
     User user;
 
     @Autowired

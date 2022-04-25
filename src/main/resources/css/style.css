@@ -1,0 +1,89 @@
+.shadow
+{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.4,0.4,10.0);
+}
+
+.right-bar
+{
+    -fx-background-color: #808080;
+}
+
+.search-box
+{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.transp
+{
+    -fx-background-color: rgba(0,0,8,0);
+}
+
+.search-button
+{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.chart
+{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 30;
+}
+
+.diet
+{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 30;
+}
+
+.chosenFun
+{
+    -fx-background-color: #ff6c03  ;
+    -fx-background-radius: 30;
+}
+
+.randomFun
+{
+    -fx-background-color: #faac0f  ;
+    -fx-background-radius: 30;
+}
+
+.diaryFun
+{
+    -fx-background-color: #b0fa0f  ;
+    -fx-background-radius: 30;
+}
+.normFun
+{
+    -fx-background-color: #d0e0ad  ;
+    -fx-background-radius: 30;
+}
+
+.addBtn
+{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.vbox
+{
+    -fx-background-color: #50d4c4;
+}
+
+.myDialog{
+    -fx-background-color: #f9d900;
+}
+.text-area{
+    -fx-text-fill:#fbff00 ;
+}
+
+.forImage
+{
+    -fx-background-color: #e0de9d  ;
+    -fx-background-radius: 30;
+}
+.separator{
+    -fx-background-color: #e79423;
+    -fx-background-radius: 2;
+}

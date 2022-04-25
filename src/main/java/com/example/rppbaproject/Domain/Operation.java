@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Data
 @Table(name = "operations")
 @Entity
-public class Operation {
+public  class Operation {
     @Id
     @Column(name = "id", nullable = false)
     private Integer id;
