@@ -47,7 +47,7 @@ public class Registration {
 
     @FXML
     void handleRegistrationButton() {
-        Stage stage=(Stage) registrationButton.getScene().getWindow();
+        Stage stage = (Stage) registrationButton.getScene().getWindow();
         supportController.generateFXML(sceneResourceForAuthorization);
         stage.close();
         user.setSurname(surnameTextField.getText());
