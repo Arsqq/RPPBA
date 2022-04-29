@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="516.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rppbaproject.Controllers.Admin">
+    <children>
+        <Button fx:id="EditButton" layoutX="351.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleRoleButton" text="Удалить" />
+        <Button fx:id="ViewButton" layoutX="346.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleAllUsersButton" text="Изменить" />
+        <TableView fx:id="TableVar" layoutX="59.0" layoutY="23.0" prefHeight="234.0" prefWidth="709.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="161.0" text="id" />
+                <TableColumn fx:id="login" prefWidth="162.0" text="Название" />
+                <TableColumn fx:id="name" prefWidth="178.0" text="Тип сырья" />
+                <TableColumn fx:id="surname" prefWidth="207.0" text="Количество" />
+            </columns>
+        </TableView>
+        <TextField fx:id="idEdit" layoutX="107.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
+        <Text layoutX="531.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество" />
+        <Text layoutX="84.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" />
+        <TextField fx:id="RoleEdit" layoutX="615.0" layoutY="285.0" prefHeight="24.0" prefWidth="60.0" />
+      <Text layoutX="346.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тип сырья" />
+      <TextField fx:id="RoleEdit1" layoutX="416.0" layoutY="285.0" prefHeight="24.0" prefWidth="60.0" />
+      <Text layoutX="195.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" />
+      <TextField fx:id="RoleEdit2" layoutX="258.0" layoutY="285.0" prefHeight="24.0" prefWidth="60.0" />
+    </children>
+</AnchorPane>
