@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="682.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rppbaproject.Controllers.Registration">
+<AnchorPane prefHeight="400.0" prefWidth="682.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rppbaproject.Controllers.Registration">
     <children>
         <HBox alignment="CENTER" prefHeight="106.0" prefWidth="682.0" style="-fx-background-color: #89c4fa;">
             <children>
-                <Label text="Market soft">
+                <Label text="iDealSoft">
                     <font>
                         <Font name="Rustico Regular" size="51.0" />
                     </font>
@@ -23,7 +23,7 @@
             <font>
                 <Font name="Lobster" size="17.0" />
             </font></TextField>
-        <TextField id="nameField" fx:id="nameTextField" layoutX="214.0" layoutY="154.0" prefHeight="38.0" prefWidth="254.0" promptText="name" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+        <TextField id="nameField" fx:id="nameTextField" layoutX="214.0" layoutY="160.0" prefHeight="38.0" prefWidth="254.0" promptText="name" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
             <font>
                 <Font name="Lobster" size="17.0" />
             </font></TextField>
@@ -31,12 +31,12 @@
             <font>
                 <Font name="Lobster" size="24.0" />
             </font></Button>
-      <PasswordField id="passwordField" fx:id="passwordTextField" layoutX="213.0" layoutY="230.0" prefHeight="38.0" prefWidth="254.0" promptText="Password" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+      <PasswordField id="passwordField" fx:id="passwordTextField" layoutX="215.0" layoutY="252.0" prefHeight="38.0" prefWidth="254.0" promptText="Password" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
          <font>
             <Font name="Lobster" size="17.0" />
          </font>
       </PasswordField>
-      <TextField id="loginField" fx:id="surnameTextField" layoutX="214.0" layoutY="192.0" prefHeight="38.0" prefWidth="253.0" promptText="surname" style="-fx-border-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+      <TextField id="loginField" fx:id="surnameTextField" layoutX="215.0" layoutY="206.0" prefHeight="38.0" prefWidth="253.0" promptText="surname" style="-fx-border-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
          <font>
             <Font name="Lobster" size="17.0" />
          </font>

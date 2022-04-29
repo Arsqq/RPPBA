@@ -29,5 +29,6 @@
         <Text layoutX="193.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" />
         <TextField fx:id="RoleEdit2" layoutX="258.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
       <Button fx:id="ViewButton1" layoutX="280.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleAllUsersButton" text="Перенести на следующий период" />
+      <Button fx:id="ViewButton2" layoutX="346.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleAllUsersButton" text="Обновить" />
     </children>
 </AnchorPane>
