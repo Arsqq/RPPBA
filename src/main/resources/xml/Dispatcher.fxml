@@ -4,14 +4,23 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="516.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rppbaproject.Controllers.Admin">
+<AnchorPane prefHeight="516.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rppbaproject.Controllers.Admin">
     <children>
-        <Button fx:id="EditButton" layoutX="351.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleRoleButton" text="Удалить" />
-        <Button fx:id="ViewButton" layoutX="346.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleAllUsersButton" text="Изменить" />
-        <TableView fx:id="TableVar" layoutX="59.0" layoutY="23.0" prefHeight="234.0" prefWidth="709.0">
+        <Button fx:id="EditButton" layoutX="668.0" layoutY="422.0" mnemonicParsing="false" onAction="#handleRoleButton" opacity="0.0" text="Удалить">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+        <Button fx:id="ViewButton" layoutX="115.0" layoutY="422.0" mnemonicParsing="false" onAction="#handleAllUsersButton" opacity="0.0" text="Изменить">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+        <TableView fx:id="TableVar" layoutX="62.0" layoutY="113.0" prefHeight="189.0" prefWidth="708.0">
             <columns>
                 <TableColumn fx:id="id" prefWidth="114.0" text="id" />
                 <TableColumn fx:id="login" prefWidth="161.0" text="Название" />
@@ -20,15 +29,67 @@
             <TableColumn fx:id="surname1" prefWidth="133.0" text="Статус" />
             </columns>
         </TableView>
-        <TextField fx:id="idEdit" layoutX="107.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
-        <Text layoutX="551.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дедлайн" />
-        <Text layoutX="84.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" />
-        <TextField fx:id="RoleEdit" layoutX="620.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
-        <Text layoutX="339.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время производства" />
-        <TextField fx:id="RoleEdit1" layoutX="461.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
-        <Text layoutX="193.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" />
-        <TextField fx:id="RoleEdit2" layoutX="258.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
-      <Button fx:id="ViewButton1" layoutX="280.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleAllUsersButton" text="Перенести на следующий период" />
-      <Button fx:id="ViewButton2" layoutX="346.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleAllUsersButton" text="Обновить" />
+        <TextField fx:id="idEdit" layoutX="260.0" layoutY="314.0" prefHeight="31.0" prefWidth="84.0" />
+        <Text layoutX="488.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дедлайн">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+        <Text layoutX="174.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+        <TextField fx:id="RoleEdit" layoutX="607.0" layoutY="358.0" prefHeight="31.0" prefWidth="84.0" />
+        <Text layoutX="472.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время производства" textAlignment="CENTER" wrappingWidth="92.24688720703125">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+        <TextField fx:id="RoleEdit1" layoutX="607.0" layoutY="314.0" prefHeight="31.0" prefWidth="84.0" />
+        <Text layoutX="149.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="67.20001220703125">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+        <TextField fx:id="RoleEdit2" layoutX="260.0" layoutY="358.0" prefHeight="31.0" prefWidth="84.0" />
+      <Button fx:id="ViewButton1" layoutX="219.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleAllUsersButton" opacity="0.0" prefHeight="31.0" prefWidth="210.0" text="Перенести на следующий период">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+      <Button fx:id="ViewButton2" layoutX="492.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleAllUsersButton" opacity="0.0" text="Обновить">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+      <AnchorPane layoutX="1.0" prefHeight="92.0" prefWidth="830.0" style="-fx-background-color: #0b0859;">
+         <children>
+            <Text fill="WHITE" layoutX="249.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Меню диспетчера" wrappingWidth="332.76837158203125">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="63.0" fitWidth="75.0" layoutX="720.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@dispatcher.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="50.0" fitWidth="75.0" layoutX="119.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="63.0" layoutX="675.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="75.0" layoutX="497.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@update.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="84.0" layoutX="282.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@next.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

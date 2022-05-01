@@ -4,14 +4,23 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="516.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rppbaproject.Controllers.Admin">
     <children>
-        <Button fx:id="EditButton" layoutX="351.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleRoleButton" text="Удалить" />
-        <Button fx:id="ViewButton" layoutX="346.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleAllUsersButton" text="Изменить" />
-        <TableView fx:id="TableVar" layoutX="59.0" layoutY="23.0" prefHeight="234.0" prefWidth="709.0">
+        <Button fx:id="EditButton" layoutX="600.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleRoleButton" opacity="0.0" prefHeight="31.0" prefWidth="84.0" text="Удалить">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+        <Button fx:id="ViewButton" layoutX="374.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleAllUsersButton" opacity="0.0" prefHeight="31.0" prefWidth="84.0" text="Изменить">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+        <TableView fx:id="TableVar" layoutX="61.0" layoutY="106.0" prefHeight="234.0" prefWidth="709.0">
             <columns>
                 <TableColumn fx:id="id" prefWidth="161.0" text="id" />
                 <TableColumn fx:id="login" prefWidth="162.0" text="Номер операции" />
@@ -19,14 +28,58 @@
                 <TableColumn fx:id="surname" prefWidth="207.0" text="Время" />
             </columns>
         </TableView>
-        <TextField fx:id="idEdit" layoutX="97.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
-        <Text layoutX="574.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время" />
-        <Text layoutX="76.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" />
-        <TextField fx:id="RoleEdit" layoutX="647.0" layoutY="285.0" prefHeight="24.0" prefWidth="60.0" />
-        <Text layoutX="390.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" />
-        <TextField fx:id="RoleEdit1" layoutX="475.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
-        <Text layoutX="183.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер операции" />
-        <TextField fx:id="RoleEdit2" layoutX="291.0" layoutY="287.0" prefHeight="24.0" prefWidth="60.0" />
-      <Button fx:id="ViewButton1" layoutX="346.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleAllUsersButton" text="Обновить" />
+        <TextField fx:id="idEdit" layoutX="233.0" layoutY="355.0" prefHeight="26.0" prefWidth="84.0" />
+        <Text layoutX="511.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+        <Text layoutX="177.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+        <TextField fx:id="RoleEdit" layoutX="600.0" layoutY="391.0" prefHeight="26.0" prefWidth="84.0" />
+        <Text layoutX="501.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+        <TextField fx:id="RoleEdit1" layoutX="600.0" layoutY="355.0" prefHeight="26.0" prefWidth="84.0" />
+        <Text layoutX="148.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер операции" textAlignment="CENTER" wrappingWidth="75.19999999999982">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+        <TextField fx:id="RoleEdit2" layoutX="233.0" layoutY="396.0" prefHeight="26.0" prefWidth="84.0" />
+      <Button fx:id="ViewButton1" layoutX="120.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleAllUsersButton" opacity="0.0" text="Обновить">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+      <AnchorPane layoutX="-6.0" prefHeight="92.0" prefWidth="830.0" style="-fx-background-color: #0b0859;">
+         <children>
+            <Text fill="WHITE" layoutX="161.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Производственный маршрут" wrappingWidth="507.1683349609375">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="70.0" fitWidth="110.0" layoutX="721.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@process.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="50.0" fitWidth="70.0" layoutX="137.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@update.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="70.0" layoutX="617.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="70.0" layoutX="391.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@edit.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>
