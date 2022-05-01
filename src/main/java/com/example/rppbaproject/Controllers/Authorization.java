@@ -28,7 +28,12 @@ public class Authorization {
 
     @Value("classpath:/xml/Admin.fxml")
     private Resource adminResource;
-
+    @Value("classpath:/xml/Dispatcher.fxml")
+    private Resource DispatcherResource;
+    @Value("classpath:/xml/Technologist.fxml")
+    private Resource TechnologistResource;
+    @Value("classpath:/xml/Master.fxml")
+    private Resource MasterResource;
 
     @Autowired
     SupportController supportController;
@@ -55,27 +60,31 @@ public class Authorization {
 
     @FXML
     private void handleLoginButton() {
-      if(userRepo.findByLogin(loginAuthorizationField.getText()).getRole().getName().equals("Admin")){
-            supportController.generateFXML(adminResource);
-        }
-        else{
-            System.out.println("ERROR");
+        switch (userRepo.findByLogin(loginAuthorizationField.getText()).getRole().getName()) {
+            case ("Admin"):
+                supportController.generateFXML(adminResource);
+                break;
+            case ("Dispatcher"):
+                supportController.generateFXML(DispatcherResource);
+                break;
+            case ("Master"):
+                supportController.generateFXML(MasterResource);
+                break;
+            case ("Technologist"):
+                supportController.generateFXML(TechnologistResource);
+                break;
+            default:
+                System.out.println("Error");
         }
     }
 
     @FXML
-    private void handleRegistrationButton()
-    {
-        Stage stage=(Stage) registrationButton.getScene().getWindow();
+    private void handleRegistrationButton() {
+        Stage stage = (Stage) registrationButton.getScene().getWindow();
         supportController.generateFXML(registrationResource);
         stage.close();
 
     }
-
-
-
-
-
 
 
 }
