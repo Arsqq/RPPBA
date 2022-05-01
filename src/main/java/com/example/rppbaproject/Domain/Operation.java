@@ -18,7 +18,7 @@ public  class Operation {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "\"time\"", nullable = false)
+    @Column(name = "time", nullable = false)
     private Integer time;
 
 

@@ -15,7 +15,7 @@ public class Order {
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "\"time\"", nullable = false)
+    @Column(name = "time", nullable = false)
     private Integer time;
 
     @Column(name = "priority", nullable = false)

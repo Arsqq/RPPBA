@@ -12,14 +12,6 @@
 
 <AnchorPane prefHeight="516.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rppbaproject.Controllers.Admin">
    <children>
-      <Button fx:id="EditButton" layoutX="628.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleRoleButton" opacity="0.0" prefHeight="31.0" prefWidth="91.0" text="Обновить">
-         <font>
-            <Font name="Comic Sans MS" size="14.0" />
-         </font></Button>
-      <Button fx:id="ViewButton" layoutX="102.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleAllUsersButton" opacity="0.0" prefHeight="31.0" prefWidth="101.0" text="Поиск">
-         <font>
-            <Font name="Comic Sans MS" size="14.0" />
-         </font></Button>
       <TableView fx:id="TableVar" layoutX="26.0" layoutY="112.0" prefHeight="222.0" prefWidth="775.0">
         <columns>
           <TableColumn fx:id="id" prefWidth="138.0" text="id" />
@@ -65,7 +57,7 @@
       </Text>
       <ImageView fitHeight="50.0" fitWidth="53.0" layoutX="126.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@search.png" />
+            <Image url="@image_2022-04-30_15-58-37.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="50.0" fitWidth="53.0" layoutX="647.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
@@ -73,5 +65,13 @@
             <Image url="@update.png" />
          </image>
       </ImageView>
+      <Button fx:id="ViewButton" layoutX="121.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleAllUsersButton" opacity="0.0" prefHeight="50.0" prefWidth="60.0" text="Поиск">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+      <Button fx:id="EditButton" layoutX="644.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleRoleButton" opacity="0.0" prefHeight="50.0" prefWidth="60.0" text="Обновить">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
    </children>
 </AnchorPane>

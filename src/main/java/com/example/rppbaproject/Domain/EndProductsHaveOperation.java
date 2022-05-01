@@ -24,11 +24,4 @@ public class EndProductsHaveOperation {
     @Column(name = "operation_id", nullable = false)
     private Integer operationId;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 }
